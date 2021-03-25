@@ -6,21 +6,24 @@ $(function(){
         $('.title-box').animate({opacity: '0%'}, 500);
         setTimeout(function(){
             $('.capsule.selected').removeClass('selected');
-            $('.capsule').animate({opacity: '100%'}, 500);
-            $('.title-box').animate({opacity: '100%'}, 500);
+            $('.capsule').animate({opacity: '100%'}, 10);
+            $('.title-box').animate({opacity: '100%'}, 10);
         },3000)
     })
 
     $('a[href]').on('click',function(e){
         e.preventDefault();
         let id = $(this).attr('href').substring(1);
-        $('html, body').animate({
+        setTimeout(function(){
+            $('html, body').animate({
                 scrollTop: $('#' + id).offset().top 
-        }, 1000);
+        }, 500)},1000);
     })
 
     $('.to-top').on('click',function(){
-        $(window).scrollTop(0);
+        $('html, body').animate({
+            scrollTop: ''
+        }, 1000);
     })
 
     $(window).scroll(function(){
