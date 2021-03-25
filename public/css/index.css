@@ -1,19 +1,25 @@
+:root {
+  --red: #e50808;
+  --green: #6ce508;
+  --blue: #08b6e5;
+  --purple: #e9a6ff;
+  --yellow: #e2e808;
+}
 * {
   margin: 0;
   padding: 0;
 }
 html {
   font-family: "Josefin Sans", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  /*scroll-behavior: smooth;*/
+  scroll-behavior: smooth;
 }
+/*MAIN PAGE*/
 .landing {
   height: 100vh;
   width: 100vw;
 }
 .title-box {
-  width: 50%;
   margin: auto;
-  height: 100%;
   position: relative;
   top: 25%;
   margin: 20px;
@@ -22,9 +28,30 @@ html {
 .title-box h1 {
   font-weight: 200;
   font-size: 5rem;
+  animation: title 3s;
+}
+@keyframes title {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: black;
+  }
 }
 .title-box h6 {
   font-size: 2rem;
+  position: relative;
+  left: -800px;
+  animation: subtitle 2s 1s forwards;
+  display: hidden;
+}
+@keyframes subtitle {
+  0% {
+    left: -800px;
+  }
+  100% {
+    left: 0px;
+  }
 }
 .capsule {
   width: 250px;
@@ -56,7 +83,69 @@ html {
   left: 20%;
   transform: rotate(15deg);
 }
+
+.selected {
+  animation: rotate 3s !important;
+}
+@keyframes rotate {
+  50% {
+    transform: rotate(0deg);
+    top: 40%;
+    left: 50%;
+    margin-left: -75px;
+  }
+}
+/*INFO SECTIONS*/
+.info {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.strip-intro {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+.strip-intro h1 {
+  align-self: center;
+  text-align: right;
+  width: 70%;
+}
+.strip-data {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.to-top {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  font-size: 2rem;
+  bottom: 10%;
+  right: 0%;
+  color: grey;
+  border-bottom: black 10px solid;
+  width: 20%;
+}
+#about h1 {
+  border-bottom: 20px solid var(--blue);
+}
+#pharm h1 {
+  border-bottom: 20px solid var(--red);
+}
+#tech h1 {
+  border-bottom: 20px solid var(--green);
+}
+#lead h1 {
+  border-bottom: 20px solid var(--yellow);
+}
+#reach h1 {
+  border-bottom: 20px solid var(--purple);
+}
 @media screen and (max-width: 500px) {
+  .title-box {
+    top: 22%;
+  }
   .capsule {
     width: 150px;
     filter: drop-shadow(0 10px 10px black);
@@ -85,5 +174,17 @@ html {
     top: 85%;
     left: 50%;
     transform: rotate(5deg);
+  }
+  .info {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .strip-intro {
+    height: 20%;
+    width: 100%;
+  }
+  .strip-data {
+    height: 80%;
+    width: 100%;
   }
 }
