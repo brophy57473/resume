@@ -13,6 +13,9 @@ html {
   font-family: "Josefin Sans", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   scroll-behavior: smooth;
 }
+.center-text {
+  text-align: center;
+}
 /*MAIN PAGE*/
 .landing {
   height: 100vh;
@@ -115,6 +118,8 @@ html {
   width: 50%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  padding: 10px;
 }
 .to-top {
   display: none;
@@ -130,11 +135,39 @@ html {
 #about h1 {
   border-bottom: 20px solid var(--blue);
 }
+#about img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px black;
+}
+#about-info {
+  margin: 20px;
+}
 #pharm h1 {
   border-bottom: 20px solid var(--red);
 }
+#pharm-info i {
+  margin: 10px 10px;
+}
+#pharm-info h2:last-of-type {
+  margin-top: 20px;
+}
+#pharm-info ul li {
+  list-style: disc;
+  margin: 10px;
+}
 #tech h1 {
   border-bottom: 20px solid var(--green);
+}
+#tech img {
+  width: 40%;
+  height: auto;
+}
+#tech a {
+  color: green;
+  display: inline;
 }
 #lead h1 {
   border-bottom: 20px solid var(--yellow);
@@ -184,7 +217,9 @@ html {
     width: 100%;
   }
   .strip-data {
+    display: flex;
     height: 80%;
     width: 100%;
+    justify-content: flex-start;
   }
 }

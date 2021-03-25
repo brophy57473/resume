@@ -11,7 +11,7 @@ $(function(){
         },3000)
     })
 
-    $('a[href]').on('click',function(e){
+    $('header a[href]').on('click',function(e){
         e.preventDefault();
         let id = $(this).attr('href').substring(1);
         setTimeout(function(){
