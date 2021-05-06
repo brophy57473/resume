@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="./public/css/index.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
     <title>Ryan Brophy</title>
 </head>
 <body>
@@ -31,13 +32,20 @@
             </div>  
             <div class='strip-data'>
                 <img src='./public/media/IMG_4317.jpg'/>
-                <div id='about-info'>
+                <div id='about-info' class="text-spacing">
                     <p>
                         I'm a pharmacist based out of Grand Rapids, MI
                         that discovered a love for software development during graduate school.
                     <br><br>
-                        My ultimate goal is to have a career using/building
-                        technology to aid in the practice of pharmacy.
+                        During my third year of graduate school, I wanted to become 
+                        a <strong>self-taught full stack developer</strong>. 
+                        My love for learning and interest in technology meshed well 
+                        as I quickly gained skills needed 
+                        to produce a number of small projects. Although I am self-motivated and enjoy coding on my own,
+                        I am excited to be part of a team to collaborate and continue learning from 
+                        others in the field. I'm currently even more focused on doing 
+                        whatever is needed (certifications, working extra hours, learning new tech stacks, etc) 
+                        to make this hobby my new career.
                     </p>
                 </div>
             </div>
@@ -57,7 +65,7 @@
                         <i class="fa fa-arrow-down"></i>
                         <br>Staff Pharmacist</p>
                         <br><br>
-                        <p class='description'>My current position
+                        <p class='description text-spacing'>My current position
                         is at a location that fills an average of 230 
                         scripts per day. While filling scripts, 
                         I also handle daily tasks such as inventory
@@ -81,18 +89,36 @@
             </div>  
             <div class='strip-data'>
                 <div id='tech-info'>
-                    I am a self-taught developer that 
-                    has focused mainly on front-end web/mobile app design
-                    such as...
+                    <div id='tech-experience'>
+                        <div class='tech-job'>
+                            <p class='tech-job-title'>Emmert Technologies <span class='tech-job-subtitle'> - Job Shadowing</span></p>
+                            
+                            <div class='tech-data text-spacing'>Over the past couple months, I've been mentored 
+                                by the founder of Emmert Technologies. I've gained skills
+                                in Vue.js and GraphQL. 
+                            </div>
+                        </div>
+                        <div class='tech-job'>
+                            <p class='tech-job-title'>Savvy</p>
+                            <div class='tech-data text-spacing'>My colleague in California had an idea for a mobile app.
+                                Given his low budget and my need for experience, I happily began
+                                building out his vision using React Native, AWS and Expo.
+                                A big work in progress.
+                            </div>
+                        </div>  
+                    <div id="line-break"></div>
+                    </div>
+                    <p class='text-center'>Some current and past projects...</p>
                     <br><br>
                     <a href='https://friendly-hypatia-0eebde.netlify.app/' target="_blank"><p>Brophy Disc Golf</p></a>
-                    <p>A basic mobile app used to keep score of various disc golf playing formats. Built with React.js</p>
+                    <p class='text-spacing'>A basic mobile app used to keep score of various disc golf playing formats. Built with React.js. A work in progress.</p>
                     <br>
                     <a href='https://main.dmum6n6vgan3x.amplifyapp.com' target="_blank"><p>Workflow Aid</p></a>
-                    <p>Designed to increase workflow efficiency for myself and colleagues. Built with Node.js and AWS services</p>
+                    <p class='text-spacing'>Designed to increase workflow efficiency for myself and colleagues. Built with Node.js and AWS services. 
+                        I use this every day when working at CVS.</p>
                     <br>
                     <a href='https://script.google.com/macros/s/AKfycbyOXEZLO5IRHi_E3zlJA6Bx6-jFIJRJtCPy9wb4tmi8VocUue4J6SU2TwdqYxKeuiI/exec' target='_blank'><p>Disc Golf Putting League</p></a>
-                    <p>An app to help me run the Big Rapids Disc Golf Putting League. Built with Google Apps Scripts</p>
+                    <p class='text-spacing'>My first project in 2019. An app to help me run the Big Rapids Disc Golf Putting League. Built from scratch with Google Apps Scripts.</p>
                 </div>
             </div>
         </div>
@@ -102,9 +128,34 @@
             </div>  
             <div class='strip-data'>
                 <div id='lead-info'>
-                    I've gained a lot of leadership 
-                    experience through disc golf over the past 
-                    7 years including...
+                    <div id='pharm-lead'>
+                        <h2>Pharmacy</h2>
+                        <ul class="text-spacing">
+                            <li>Oversee and manage pharmacy technicians</li>
+                            <li>Delegate tasks to ensure company initiatives are reached</li>
+                            <li>Create an environment technicians are comfortable to ask questions and learn</li>
+                            <li>Assist in on-the-job training of pharmacists and pharmacy technicians</li>
+                        </ul>
+                    </div>
+                    <div id='disc-lead'>
+                        <h2>Disc Golf</h2>
+                        <h3>Tournament Director</h3>
+                        <div class='text-spacing'>
+                            I began directing tournaments in Big Rapids, MI during college to promote 
+                            the courses the club had spent years building. After receiving positive feedback, 
+                            I transitioned to running Professional Disc Golf Association Sanctioned tournaments 
+                            on the same courses. Attendance continues to increas year to year as events I host 
+                            draw more people to play - 
+                        </div>
+                        <h3>Coach of Ferris State University</h3>
+                        <div class='text-spacing'>
+                            I was president of Ferris State Disc Golf Club for five years while 
+                            on campus. The team won the National Collegiate Disc Golf Championships (NCDGC) 
+                            in 2015, 2017 and 2019. After graduation, I have continued to invest time into the team 
+                            and accompanied them to the NCDGC in April 2021 where our women's team won their 
+                            first National Title. 
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -113,8 +164,11 @@
                 <h1 class='strip-title'>Contact Me</h1>
             </div>  
             <div class='strip-data'>
-                <div id='reach-info'>Just a pharmacist trying to get started
-                    with his tech career
+                <div id='reach-info'>
+                    <strong>rbrophy@att.net</strong>
+                    <br>
+                    <br>
+                    References: Available upon request
                 </div>
             </div>
         </div>

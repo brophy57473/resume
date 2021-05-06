@@ -16,6 +16,9 @@ html {
 .center-text {
   text-align: center;
 }
+.text-spacing {
+  line-height: 1.5em;
+}
 /*MAIN PAGE*/
 .landing {
   height: 100vh;
@@ -100,13 +103,15 @@ html {
 }
 /*INFO SECTIONS*/
 .info {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
 }
+.strip-title {
+  margin-bottom: 10px;
+}
 .strip-intro {
   width: 50%;
-  height: 100%;
   display: flex;
 }
 .strip-intro h1 {
@@ -119,7 +124,7 @@ html {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 10px;
+  margin: 20px;
 }
 .to-top {
   display: none;
@@ -129,8 +134,11 @@ html {
   bottom: 10%;
   right: 0%;
   color: grey;
+  background-color: rgba(255, 255, 255, 0.9);
   border-bottom: black 10px solid;
   width: 20%;
+  min-width: 100px;
+  max-width: 150px;
 }
 #about h1 {
   border-bottom: 20px solid var(--blue);
@@ -142,24 +150,44 @@ html {
   margin: 20px auto;
   box-shadow: 0 0 10px black;
 }
-#about-info {
-  margin: 20px;
-}
 #pharm h1 {
   border-bottom: 20px solid var(--red);
 }
 #pharm-info i {
-  margin: 10px 10px;
+  margin: 20px;
 }
 #pharm-info h2:last-of-type {
   margin-top: 20px;
 }
 #pharm-info ul li {
   list-style: disc;
-  margin: 10px;
+  margin: 20px;
+}
+.tech-job {
+  margin-bottom: 20px;
+}
+.tech-job-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: green;
+}
+.tech-job-subtitle {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+#line-break {
+  height: 5px;
+  width: 80%;
+  margin: auto;
+  background-color: darkgreen;
 }
 #tech h1 {
   border-bottom: 20px solid var(--green);
+}
+.text-center {
+  text-align: center;
+  margin-top: 10px;
 }
 #tech img {
   width: 40%;
@@ -171,6 +199,22 @@ html {
 }
 #lead h1 {
   border-bottom: 20px solid var(--yellow);
+}
+#pharm-lead {
+  margin-bottom: 30px;
+}
+#pharm-lead ul li {
+  list-style: disc;
+  margin: 20px;
+}
+#disc-lead h2 {
+  margin-bottom: 10px;
+}
+#disc-lead h3 {
+  margin-bottom: 5px;
+}
+#disc-lead .text-spacing {
+  margin-bottom: 20px;
 }
 #reach h1 {
   border-bottom: 20px solid var(--purple);
@@ -210,16 +254,17 @@ html {
   }
   .info {
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
   }
   .strip-intro {
     height: 20%;
-    width: 100%;
+    margin-top: 50px;
+    width: 100vw;
   }
   .strip-data {
     display: flex;
     height: 80%;
-    width: 100%;
+    width: 95%;
     justify-content: flex-start;
   }
 }
