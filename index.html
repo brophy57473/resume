@@ -1,170 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="./public/css/index.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/index.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
     <title>Ryan Brophy</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class='landing'>
-            <div class='title-box'>
-                <h1>Ryan<br>Brophy</h1>
-                <h6>pick a capsule to learn more</h6>
-            </div>
-                <a href='#about'><img class='capsule' id='blue-cap' src='./public/media/blueCap.png'></a>
-                <a href='#tech'><img class='capsule' id='green-cap'src='./public/media/greenCap.png'></a>
-                <a href='#pharm'><img class='capsule' id='red-cap'src='./public/media/RedCap.png'></a>
-                <a href='#lead'><img class='capsule' id='yellow-cap'src='./public/media/yellowCap.png'></a>
-                <a href='#reach'><img class='capsule' id='purple-cap'src='./public/media/purpleCap.png'></a>
+      <div class="landing">
+        <div class="title-box">
+          <h1>Ryan<br />Brophy</h1>
+          <h6>pick a capsule to learn more</h6>
         </div>
-        <div class='to-top'>TOP</div>
+        <a href="#about"
+          ><img class="capsule" id="blue-cap" src="./public/media/blueCap.png"
+        /></a>
+        <a href="#tech"
+          ><img
+            class="capsule"
+            id="green-cap"
+            src="./public/media/greenCap.png"
+        /></a>
+        <a href="#pharm"
+          ><img class="capsule" id="red-cap" src="./public/media/RedCap.png"
+        /></a>
+        <a href="#lead"
+          ><img
+            class="capsule"
+            id="yellow-cap"
+            src="./public/media/yellowCap.png"
+        /></a>
+        <a href="#reach"
+          ><img
+            class="capsule"
+            id="purple-cap"
+            src="./public/media/purpleCap.png"
+        /></a>
+      </div>
+      <div class="to-top">TOP</div>
     </header>
     <main>
-        <div class='info' id='about'>
-            <div class='strip-intro'>
-                <h1 class='strip-title'>About Me</h1>
-            </div>  
-            <div class='strip-data'>
-                <img src='./public/media/IMG_4317.jpg'/>
-                <div id='about-info' class="text-spacing">
-                    <p>
-                        I'm a pharmacist based out of Grand Rapids, MI
-                        with a passion for software development.
-                    <br><br>
-                        I discovered my love for learning and interest in technology meshed well 
-                        as I was able to quickly learn skills and produce a number of small scale projects. 
-                        Recently, I have been working with React Native, Vue.js, React.js, GraphQL and Amazon Web Services as I continue 
-                        my pursuit of perfection in architecting solutions that deliver value to the end user. I'm excited to join 
-                        a team of collaborators and learn new tech stacks from those with more experience in the field. My background 
-                        in healthcare and retail pharmacy provide a unique lens that can aid in developing healthcare specific tech solutions and beyond.  
-                    </p>
-                </div>
-            </div>
+      <div class="info" id="about">
+        <div class="strip-intro">
+          <h1 class="strip-title">About Me</h1>
         </div>
-        <div class='info' id='pharm'>
-            <div class='strip-intro'>
-                <h1 class='strip-title'>Pharmacy</h1>
-            </div>  
-            <div class='strip-data'>
-                <div id='pharm-info'>
-                    <h2>CVS Pharmacy</h2>
-                    <h5>2015 to Present</h5>
-                    <p class='center-text'>
-                        Pharmacy Tech<br>
-                        <i class="fa fa-arrow-down" aria-hidden='true'></i>
-                        <br>Pharmacy Intern<br> 
-                        <i class="fa fa-arrow-down"></i>
-                        <br>Staff Pharmacist</p>
-                        <br><br>
-                        <p class='description text-spacing'>My current position
-                        is at a location that fills an average of 230 
-                        scripts per day. While filling scripts, 
-                        I also handle daily tasks such as inventory
-                        management and supervising technicians.
-                    </p>
-                    <h2>Pharmacy School Rotations</h2>
-                    <h5>May 2019 - Feb 2020</h5>
-                    <ul>
-                        <li>Nuclear Pharmacy</li>
-                        <li>Ambulatory Care</li>
-                        <li>Hosptial Care</li>
-                        <li>Internal Medicine</li>
-                        <li>Retail Pharmacy</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="strip-data">
+          <img src="./public/media/IMG_4317.jpg" />
+          <div id="about-info" class="text-spacing">
+            <p>
+              I'm a pharmacist based out of Grand Rapids, MI with a passion for
+              software development.
+              <br /><br />
+              I discovered my love for learning and interest in technology
+              meshed well as I was able to quickly learn skills and produce a
+              number of small scale projects. Recently, I have been working with
+              React Native, Vue.js, React.js, GraphQL and Amazon Web Services as
+              I continue my pursuit of perfection in architecting solutions that
+              deliver value to the end user. I'm excited to join a team of
+              collaborators and learn new tech stacks from those with more
+              experience in the field. My background in healthcare and retail
+              pharmacy provide a unique lens that can aid in developing
+              healthcare specific tech solutions and beyond.
+            </p>
+          </div>
         </div>
-        <div class='info' id='tech'>
-            <div class='strip-intro'>
-                <h1 class='strip-title'>Technology</h1>
-            </div>
-            <div class='strip-data'>
-                <div id='tech-info'>
-                    <div id='tech-experience'>
-                        <div class='tech-job'>
-                            <p class='tech-job-title'>Emmert Technologies <span class='tech-job-subtitle'>- Web Developer</span></p>
-                            
-                            <div class='tech-data text-spacing'>Over the past couple months, I've been mentored 
-                                by the founder of Emmert Technologies. I've gained skills
-                                in Vue.js and GraphQL. 
-                            </div>
-                        </div>
-                        <div class='tech-job'>
-                            <p class='tech-job-title'>Savvy <span class='tech-job-subtitle'>- Consulted</span></p>
-                            <div class='tech-data text-spacing'>Consulted on a tech start-up based out of California. Using React Native, AWS and Expo, I was able to help the founder bring his ideas to life. The final project is still under development.
-                            </div>
-                        </div>  
-                    <div id="line-break"></div>
-                    </div>
-                    <p class='text-center'>Some current and past projects...</p>
-                    <br><br>
-                    <a href='https://friendly-hypatia-0eebde.netlify.app/' target="_blank"><p>Brophy Disc Golf</p></a>
-                    <p class='text-spacing'>A basic mobile app used to keep score of various disc golf playing formats. Built with React.js. A work in progress.</p>
-                    <br>
-                    <a href='https://main.dmum6n6vgan3x.amplifyapp.com' target="_blank"><p>Workflow Aid</p></a>
-                    <p class='text-spacing'>Designed to increase workflow efficiency for myself and colleagues. Built with Node.js and AWS services. 
-                        I use this every day when working at CVS.</p>
-                    <br>
-                    <a href='https://script.google.com/macros/s/AKfycbyOXEZLO5IRHi_E3zlJA6Bx6-jFIJRJtCPy9wb4tmi8VocUue4J6SU2TwdqYxKeuiI/exec' target='_blank'><p>Disc Golf Putting League</p></a>
-                    <p class='text-spacing'>My first web development project in 2019. An app to help me run the Big Rapids Disc Golf Putting League. Built from scratch with Google Apps Scripts.</p>
-                </div>
-            </div>
+      </div>
+      <div class="info" id="pharm">
+        <div class="strip-intro">
+          <h1 class="strip-title">Pharmacy</h1>
         </div>
-        <div class='info' id='lead'>
-            <div class='strip-intro'>
-                <h1 class='strip-title'>Leadership</h1>
-            </div>  
-            <div class='strip-data'>
-                <div id='lead-info'>
-                    <div id='pharm-lead'>
-                        <h2>Pharmacy</h2>
-                        <ul class="text-spacing">
-                            <li>Oversee and manage pharmacy technicians</li>
-                            <li>Delegate tasks to ensure company initiatives are reached</li>
-                            <li>Create an environment technicians are comfortable to ask questions and learn</li>
-                            <li>Assist in on-the-job training of pharmacists and pharmacy technicians</li>
-                        </ul>
-                    </div>
-                    <div id='disc-lead'>
-                        <h2>Disc Golf</h2>
-                        <h3>Tournament Director</h3>
-                        <div class='text-spacing'>
-                            Doubled player attendance over three years through collaboration with local businesses, 
-                            participating with course improvements, and overhauling event organization. 
-                            Directing tournaments over the past 4 years has provided crucial experience in 
-                            collaborating with others, time and task management, and seeing large-scale projects to succesful completion. 
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="strip-data">
+          <div id="pharm-info">
+            <h2>CVS Pharmacy</h2>
+            <h5>2015 to Present</h5>
+            <p class="center-text">
+              Pharmacy Tech<br />
+              <i class="fa fa-arrow-down" aria-hidden="true"></i>
+              <br />Pharmacy Intern<br />
+              <i class="fa fa-arrow-down"></i>
+              <br />Pharmacist
+            </p>
+            <br /><br />
+            <p class="description text-spacing">
+              As a pharmacist that works shifts at multiple locations I need to
+              be ready to adapt to new environments. I rely on past experiences
+              to make quick accurate decisions regarding patient care and
+              pharmacy workflow.
+            </p>
+            <h2>Pharmacy School Rotations</h2>
+            <h5>May 2019 - Feb 2020</h5>
+            <ul>
+              <li>Nuclear Pharmacy</li>
+              <li>Ambulatory Care</li>
+              <li>Hosptial Care</li>
+              <li>Internal Medicine</li>
+              <li>Retail Pharmacy</li>
+            </ul>
+          </div>
         </div>
-        <div class='info' id='reach'>
-            <div class='strip-intro'>
-                <h1 class='strip-title'>Contact Me</h1>
-            </div>  
-            <div class='strip-data'>
-                <div id='reach-info'>
-                    <strong>rbrophy@att.net</strong>
-                    <br>
-                    <br>
-                    <h3>References*</h3> 
-                    <div class='text-spacing'>Keith Brophy - Mentor
-                    <br>
-                    Jack Hermann - CVS Pharmacist 
-                    <br>
-                    *Contact info available upon request</div>
-                </div>
-            </div>
+      </div>
+      <div class="info" id="tech">
+        <div class="strip-intro">
+          <h1 class="strip-title">Technology</h1>
         </div>
+        <div class="strip-data">
+          <div id="tech-info">
+            <div id="tech-experience">
+              <div class="tech-job">
+                <p class="tech-job-title">
+                  Emmert Technologies
+                  <span class="tech-job-subtitle">- Web Developer</span>
+                </p>
 
-    </main>   
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="./public/js/index.js"></script>
-</body>
+                <div class="tech-data text-spacing">
+                  Over the past couple months, I've been mentored by the founder
+                  of Emmert Technologies. I've gained skills in Vue.js and
+                  GraphQL.
+                </div>
+              </div>
+              <div class="tech-job">
+                <p class="tech-job-title">
+                  Savvy <span class="tech-job-subtitle">- Consulted</span>
+                </p>
+                <div class="tech-data text-spacing">
+                  Consulted on a tech start-up based out of California. Using
+                  React Native, AWS and Expo, I was able to help the founder
+                  bring his ideas to life. The final project is still under
+                  development.
+                </div>
+              </div>
+              <div id="line-break"></div>
+            </div>
+            <p class="text-center">Some current and past projects...</p>
+            <br /><br />
+            <a
+              href="https://friendly-hypatia-0eebde.netlify.app/"
+              target="_blank"
+              ><p>Brophy Disc Golf</p></a
+            >
+            <p class="text-spacing">
+              A basic mobile app used to keep score of various disc golf playing
+              formats. Built with React.js. A work in progress.
+            </p>
+            <br />
+            <a href="https://main.dmum6n6vgan3x.amplifyapp.com" target="_blank"
+              ><p>Workflow Aid</p></a
+            >
+            <p class="text-spacing">
+              Designed to increase workflow efficiency for myself and
+              colleagues. Built with Node.js and AWS services. I use this every
+              day when working at CVS.
+            </p>
+            <br />
+            <a
+              href="https://script.google.com/macros/s/AKfycbyOXEZLO5IRHi_E3zlJA6Bx6-jFIJRJtCPy9wb4tmi8VocUue4J6SU2TwdqYxKeuiI/exec"
+              target="_blank"
+              ><p>Disc Golf Putting League</p></a
+            >
+            <p class="text-spacing">
+              My first web development project in 2019. An app to help me run
+              the Big Rapids Disc Golf Putting League. Built from scratch with
+              Google Apps Scripts.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="info" id="lead">
+        <div class="strip-intro">
+          <h1 class="strip-title">Leadership</h1>
+        </div>
+        <div class="strip-data">
+          <div id="lead-info">
+            <div id="pharm-lead">
+              <h2>Pharmacy</h2>
+              <ul class="text-spacing">
+                <li>Oversee and manage pharmacy technicians</li>
+                <li>
+                  Delegate tasks to ensure company initiatives are reached
+                </li>
+                <li>
+                  Create an environment technicians are comfortable to ask
+                  questions and learn
+                </li>
+                <li>
+                  Assist in on-the-job training of pharmacists and pharmacy
+                  technicians
+                </li>
+              </ul>
+            </div>
+            <div id="disc-lead">
+              <h2>Disc Golf</h2>
+              <h3>Tournament Director</h3>
+              <div class="text-spacing">
+                Doubled player attendance over three years through collaboration
+                with local businesses, participating with course improvements,
+                and overhauling event organization. Directing tournaments over
+                the past 4 years has provided crucial experience in
+                collaborating with others, time and task management, and seeing
+                large-scale projects to succesful completion.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info" id="reach">
+        <div class="strip-intro">
+          <h1 class="strip-title">Contact Me</h1>
+        </div>
+        <div class="strip-data">
+          <div id="reach-info">
+            <strong>rbrophy@att.net</strong>
+            <br />
+            <br />
+            <h3>References*</h3>
+            <div class="text-spacing">
+              Keith Brophy - Mentor
+              <br />
+              Jack Hermann - CVS Pharmacist
+              <br />
+              *Contact info available upon request
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./public/js/index.js"></script>
+  </body>
 </html>
